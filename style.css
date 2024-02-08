@@ -3,7 +3,7 @@ body{
 }
 
 svg{
-	width: 540px;
+	width: 530px;
 	display: flex;
 	margin: auto;
 }
@@ -21,4 +21,19 @@ svg{
 #tulip3:hover{
 	transform: translate(0, -50px);
 	cursor: pointer;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px){
+    body{
+        overflow: hidden;
+    }
+    
+    svg{
+        width: 490px;
+        display: flex;
+        margin: auto;
+        padding-top: 5vh;
+    }
+
 }
