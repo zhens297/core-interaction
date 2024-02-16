@@ -5,12 +5,10 @@
     margin: auto;
     display: flex;
     border-radius: 60px;
-
 }
 
 h1{
     font-family: "Pixelify Sans", sans-serif;
-    weight: 400px;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 6vw;
