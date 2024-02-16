@@ -4,7 +4,7 @@
     border: 3px solid;
     margin: auto;
     display: flex;
-    border-radius: 60px;
+    border-radius: 100px;
 }
 
 h1{
@@ -15,4 +15,19 @@ h1{
     text-align: center;
     margin: auto;
 }
+
+h3{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 40vw;
+    color: black;
+    line-height: 3px;
+    text-align: center;
+}
+
+a:link{
+    text-decoration: none;
+}
+
 
