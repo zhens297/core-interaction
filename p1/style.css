@@ -9,7 +9,7 @@
     width: 60vw;
     height: 14vw;
     border: 3px solid;
-    border-radius: 100px;
+    border-radius: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,16 @@ h1 {
     font-weight: 400;
     font-size: 6vw;
     text-align: center;
+}
+
+.blink{
+	animation: blinking 1.5s linear infinite;
+}
+
+@keyframes blinking{
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 h3{
@@ -37,15 +47,9 @@ a:link{
     text-decoration: none;
 }
 
-.mark:hover{
+h3:hover{
     text-shadow: 0px 2px 300px red;
   filter: dropshadow(color=red, offx=2, offy=2);
 }
-
-.exclam:hover{
-    text-shadow: 0px 2px 300px red;
-    filter: dropshadow(color=red, offx=2, offy=2);
-}
-
 
 
