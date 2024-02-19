@@ -1,19 +1,26 @@
-#box{
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+#box {
     width: 60vw;
     height: 14vw;
     border: 3px solid;
-    margin: auto;
-    display: flex;
     border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1{
+h1 {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 6vw;
     text-align: center;
-    margin: auto;
 }
 
 h3{
