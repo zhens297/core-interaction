@@ -8,7 +8,7 @@
 #box {
     width: 60vw;
     height: 14vw;
-    border: 3px solid;
+    border: 5px solid;
     border-radius: 5vw;
     display: flex;
     justify-content: center;
@@ -24,13 +24,27 @@ h1 {
 }
 
 .blink{
-	animation: blinking 1.5s linear infinite;
+	animation: blinking 1s linear infinite;
 }
 
 @keyframes blinking{
     0% { opacity: 0; }
     50% { opacity: 1; }
     100% { opacity: 0; }
+}
+
+#menu{
+    text-align:center;
+
+}
+
+h2{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    display: inline-block;
+    text-align: left;
+
 }
 
 h3{
