@@ -1,3 +1,7 @@
+*{
+    cursor: url(../image/period.png), auto;
+  }
+
 h3{
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
