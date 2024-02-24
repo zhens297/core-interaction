@@ -36,6 +36,13 @@ h3{
   justify-content: center;
 }
 
+.interesting{
+  display: flex;
+  flex-direction: row;
+  gap: 15vw;
+  justify-content: center;
+}
+
 a:link{
     text-decoration: none;
 }
