@@ -3,3 +3,14 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
 }
+
+button{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 60px;
+    color: red;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

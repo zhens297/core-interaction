@@ -1,5 +1,49 @@
+*{
+    cursor: url(../), auto;
+  }
+
 body{
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 20px;
+}
+
+h1{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 40vw;
+    color: black;
+    line-height: 3px;
+    text-align: center;
+}
+
+p{
+    border: 4px solid;
+    border-radius: 4vw;
+    padding: 30px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+button{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 60px;
+    color: red;
+    border: none;
+    background: none;
+    cursor: pointer;
 }

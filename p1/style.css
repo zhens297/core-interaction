@@ -22,7 +22,6 @@ body{
 
 #box:hover{
     cursor: url(./image/comma.png), auto;
-
     box-shadow: 0px 2px 300px red;
     animation: shake 0.5s;
     animation-iteration-count: 0.5;
