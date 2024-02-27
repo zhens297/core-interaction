@@ -17,6 +17,7 @@ h1{
     color: black;
     line-height: 3px;
     text-align: center;
+  
 }
 
 p{
@@ -35,6 +36,8 @@ p{
 #grid{
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    padding-right: 3vw;
+    
 }
 
 button{
