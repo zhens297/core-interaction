@@ -110,3 +110,7 @@ button{
     background: none;
     cursor: pointer;
 }
+
+.uninteresting{
+    opacity: 0%;
+}
