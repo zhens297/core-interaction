@@ -1,0 +1,40 @@
+*{
+    cursor: url(../image/period.png), auto;
+  }
+
+h2{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: black;
+    border: 4px solid;
+    border-radius: 2vw;
+    padding: 15px;
+}
+
+.box{
+  display: flex;
+  width: 56%;
+  margin: auto;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+button{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1em;
+    color: red;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .end{
+    text-align: center;
+  }

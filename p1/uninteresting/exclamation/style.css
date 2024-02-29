@@ -19,6 +19,32 @@ h1{
     text-align: center;
     margin-top: 18vw;
     margin-bottom: 20vw;
+    animation: bounce 1.8s infinite; 
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0); 
+    }
+    10% {
+        transform: translateY(-32px); 
+    }
+
+    20% {
+        transform: translateY(5px); 
+    }
+
+    28% {
+        transform: translateY(-7px); 
+    }
+
+    40% {
+        transform: translateY(0); 
+    }
+
+    100% {
+        transform: translateY(0); 
+    }
 }
 
 h2{
@@ -41,19 +67,19 @@ h3{
 }
 
 .bar1{
-    width: 60px;
+    width: 140px;
     height: 10px;
     background-color: red;
   }
   
 .bar2{
-    width: 20px;
+    width: 10px;
     height: 10px;
     background-color: red;
  }
 
 .bar3{
-    width: 40px;
+    width: 20px;
     height: 10px;
     background-color: red;
  }
