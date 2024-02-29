@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const textElement = document.querySelector('.box p');
+    const textElement = document.querySelector('h1');
     const textContent = textElement.innerText;
     textElement.innerText = '';
 
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (i < textContent.length) {
             textElement.innerHTML += textContent.charAt(i);
             i++;
-            setTimeout(typeWriter, 30); // Adjust typing speed here
+            setTimeout(typeWriter, 80); // Adjust typing speed here
         }
     }
 
