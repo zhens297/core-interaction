@@ -41,7 +41,7 @@ h3{
   justify-content: center;
   opacity: 0;
   animation: opacity 2s ease-in-out forwards;
-  animation-delay: 6s;
+  animation-delay: 4.5s;
 }
 
 @keyframes opacity {

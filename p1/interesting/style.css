@@ -38,6 +38,19 @@ h3{
   flex-direction: row;
   gap: 15vw;
   justify-content: center;
+  opacity: 0;
+  animation: opacity 2s ease-in-out forwards;
+  animation-delay: 9s;
+}
+
+@keyframes opacity {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
 }
 
 a:link{
