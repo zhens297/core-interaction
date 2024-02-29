@@ -8,10 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (i < textContent.length) {
             textElement.innerHTML += textContent.charAt(i);
             i++;
-            setTimeout(typeWriter, 40); // Adjust typing speed here
+            setTimeout(typeWriter, 10); // Adjust typing speed here
         }
     }
 
-    // Start the typewriter effect when the page loads
     typeWriter();
 });
