@@ -15,6 +15,7 @@ h2{
     width: 56%;
     margin: auto;
     margin-top: 10vw;
+    margin-bottom: 13vw;
 }
 
 a:link{
@@ -26,11 +27,25 @@ button{
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 1em;
-    color: red;
+    color: black;
     border: none;
-    background: none;
+    height: 200px;
+    width: 200px;
+    background: black;
     cursor: pointer;
     margin: auto;
+    animation: fall 2s linear forwards;
+    top: 0;
+  }
+
+  @keyframes fall{
+    to {
+      top: calc(100vh - 50px); /* Adjust final position */
+  }
+}
+
+  button:hover{
+color: red;
   }
 
   .end{
