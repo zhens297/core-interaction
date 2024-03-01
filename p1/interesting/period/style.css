@@ -121,10 +121,13 @@ p{
     overflow: scroll;
     height: 79vh;
     scrollbar-color: red;
+
 }
 
-.red{
+
+.stop{
     color: red;
+    font-size: 17vw;
 }
 
 .box{
