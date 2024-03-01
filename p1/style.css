@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 90vh; 
 }
 
 #box {
@@ -69,9 +69,9 @@ a:link{
     100% { opacity: 0; }
 }
 
-#menu{
+/* #menu{
     text-align: center;
-}
+} */
 
 h2{
     font-family: "Pixelify Sans", sans-serif;
@@ -81,5 +81,28 @@ h2{
     text-align: left;
     color: black;
 }
+
+button {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: red;
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+  }
+
+  .back{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  button:hover {
+    transform: scale(1.1); 
+  }
 
 
