@@ -149,7 +149,6 @@ p{
     flex-direction: column;
     align-items: center;
     width: 95%;
-
 }
 
 #grid{
@@ -168,5 +167,38 @@ button{
     background: none;
     cursor: pointer;
 }
+
+@media (max-width: 768px){
+  
+    h1{
+        font-size: 20rem;
+        color: black;
+        line-height: 2px;
+        text-align: center;
+        margin-top: 28vw;
+        margin-bottom: 28vw;
+        animation: flip 2s infinite alternate;
+    }
+
+    .stats{
+        margin-bottom: 10vw;
+    }
+
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    p{
+        border: 4px solid;
+        border-radius: 4vw;
+        padding: 30px;
+        overflow: auto;
+        height: auto;
+    }
+  
+  }
+
 
 
