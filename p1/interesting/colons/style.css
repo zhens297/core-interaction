@@ -19,6 +19,19 @@ h1{
   text-align: center;
   margin-top: 10vw;
   margin-bottom: 16vw;
+  animation: bow 1s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+
+@keyframes bow{
+  0% {  
+    opacity: 1;
+
+}
+100% {
+    opacity: 0;
+    transform: rotateZ(-20deg);
+}
 }
 
 h2{
