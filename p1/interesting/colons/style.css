@@ -1,15 +1,16 @@
-*{
+* {
   cursor: url(../../image/period.png), auto;
 }
 
-body{
+body {
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1.5rem;
+  overflow: hidden;
 }
 
-h1{
+h1 {
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -23,42 +24,46 @@ h1{
   transform-origin: bottom center;
 }
 
-@keyframes bow{
-  0% {  
+@keyframes bow {
+  0% {
     opacity: 1;
 
-}
-100% {
+  }
+
+  100% {
     opacity: 0;
     transform: rotateZ(-20deg);
-}
+  }
 }
 
-h2{
+h2 {
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   text-align: center;
 }
 
-.stats{
+.stats {
   line-height: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h3{
+h3 {
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  
+
 }
 
 .bar1 {
-  width: 250px; /* Adjust as needed */
-  height: 10px; /* Adjust as needed */
-  position: relative; /* Needed for absolute positioning */
+  width: 250px;
+  /* Adjust as needed */
+  height: 10px;
+  /* Adjust as needed */
+  position: relative;
+  /* Needed for absolute positioning */
 }
 
 .bar1 .fill {
@@ -66,8 +71,10 @@ h3{
   top: 0.26vh;
   left: 0;
   height: 100%;
-  background-color: red; /* Adjust as needed */
-  width: 20%; /* Adjust as needed */
+  background-color: red;
+  /* Adjust as needed */
+  width: 20%;
+  /* Adjust as needed */
 }
 
 .bar1 .border {
@@ -75,11 +82,13 @@ h3{
   top: 0;
   left: 0;
   height: 90%;
-  border: 3px solid red; /* Adjust border styles as needed */
-  width: 100%; /* Adjust as needed */
+  border: 3px solid red;
+  /* Adjust border styles as needed */
+  width: 100%;
+  /* Adjust as needed */
 }
 
-.bar2{
+.bar2 {
   width: 250px;
   height: 10px;
   position: relative;
@@ -90,8 +99,10 @@ h3{
   top: 0.26vh;
   left: 0;
   height: 100%;
-  background-color: red; /* Adjust as needed */
-  width: 50%; /* Adjust as needed */
+  background-color: red;
+  /* Adjust as needed */
+  width: 50%;
+  /* Adjust as needed */
 }
 
 .bar2 .border {
@@ -99,11 +110,13 @@ h3{
   top: 0;
   left: 0;
   height: 90%;
-  border: 3px solid red; /* Adjust border styles as needed */
-  width: 100%; /* Adjust as needed */
+  border: 3px solid red;
+  /* Adjust border styles as needed */
+  width: 100%;
+  /* Adjust as needed */
 }
 
-.bar3{
+.bar3 {
   width: 250px;
   height: 10px;
   position: relative;
@@ -114,8 +127,10 @@ h3{
   top: 0.27vh;
   left: 0;
   height: 100%;
-  background-color: red; /* Adjust as needed */
-  width: 80%; /* Adjust as needed */
+  background-color: red;
+  /* Adjust as needed */
+  width: 80%;
+  /* Adjust as needed */
 }
 
 .bar3 .border {
@@ -123,24 +138,27 @@ h3{
   top: 0;
   left: 0;
   height: 90%;
-  border: 3px solid red; /* Adjust border styles as needed */
-  width: 100%; /* Adjust as needed */
+  border: 3px solid red;
+  /* Adjust border styles as needed */
+  width: 100%;
+  /* Adjust as needed */
 }
 
-p{
+p {
   border: 4px solid;
   border-radius: 4vw;
   padding: 30px;
-  overflow: scroll;
+  overflow: auto;
+  overflow-x: none;
   height: 79vh;
   scrollbar-color: red;
 }
 
-.red{
+.red {
   color: red;
 }
 
-.box{
+.box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,13 +166,13 @@ p{
 
 }
 
-#grid{
+#grid {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  
+
 }
 
-button{
+button {
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -165,34 +183,37 @@ button{
   cursor: pointer;
 }
 
-@media (max-width: 768px){
-  
-  h1{
-      font-size: 20rem;
-      color: black;
-      line-height: 2px;
-      text-align: center;
-      margin-top: 28vw;
-      margin-bottom: 28vw;
-      animation: flip 2s infinite alternate;
+@media (max-width: 768px) {
+
+  body {
+    overflow: auto;
   }
 
-  .stats{
-      margin-bottom: 10vw;
+  h1 {
+    font-size: 20rem;
+    color: black;
+    line-height: 2px;
+    text-align: center;
+    margin-top: 28vw;
+    margin-bottom: 28vw;
   }
 
-  #grid{
-      display: grid;
-      grid-template-columns: 1fr;
-      
+  .stats {
+    margin-bottom: 10vw;
   }
 
-  p{
-      border: 4px solid;
-      border-radius: 4vw;
-      padding: 30px;
-      overflow: auto;
-      height: auto;
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  p {
+    border: 4px solid;
+    border-radius: 4vw;
+    padding: 30px;
+    overflow: auto;
+    height: auto;
   }
 
 }

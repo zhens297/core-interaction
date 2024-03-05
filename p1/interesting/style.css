@@ -1,12 +1,12 @@
-*{
+* {
   cursor: url(../image/period.png), auto;
 }
 
-body{
-overflow: hidden;
+body {
+  overflow: hidden;
 }
 
-h2{
+h2 {
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -20,14 +20,14 @@ h2{
   margin: auto;
 }
 
-.box{
+.box {
 
-margin-top: 10vw;
-margin-bottom: -10vw;
+  margin-top: 10vw;
+  margin-bottom: -10vw;
 
 }
 
-h3{
+h3 {
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -35,78 +35,79 @@ h3{
   color: black;
   line-height: 1rem;
   text-align: center;
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
 }
 
 
-.interesting{
-display: flex;
-flex-direction: row;
-gap: 15vw;
-justify-content: center;
-opacity: 0;
-animation: opacity 2s ease-in-out forwards;
-animation-delay: 4.6s;
+.interesting {
+  display: flex;
+  flex-direction: row;
+  gap: 15vw;
+  justify-content: center;
+  opacity: 0;
+  animation: opacity 2s ease-in-out forwards;
+  animation-delay: 9.2s;
 }
 
 @keyframes opacity {
-from{
-  opacity: 0;
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-to{
-  opacity: 1;
-}
-}
 
-
-.reveal{
-color: red
+.reveal {
+  color: red
 }
 
-a:link{
+a:link {
   text-decoration: none;
 }
 
-h3:hover{
-text-shadow: 0px 0px 200px red;
-transform: scale(1.1); 
+h3:hover {
+  text-shadow: 0px 0px 200px red;
+  transform: scale(1.1);
 
 }
 
 button {
-font-family: "Pixelify Sans", sans-serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-size: 1.5em;
-color: red;
-border: none;
-background: none;
-cursor: pointer;
-position: fixed;
-z-index: 999;
-bottom: 20px; /* Adjust the distance from the bottom */
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: red;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  /* Adjust the distance from the bottom */
 
 }
 
-.back{
-left: 20px;
+.back {
+  left: 20px;
 }
 
-.skip{
-right: 20px;
+.skip {
+  right: 20px;
 }
 
 button:hover {
-transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
-@media (max-width: 768px){
-  body{
+@media (max-width: 768px) {
+  body {
     overflow: auto;
   }
 
-  h2{
+  h2 {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -117,20 +118,20 @@ transform: scale(1.1);
     padding: 15px;
     display: flex;
     width: 90%;
-}
+  }
 
-h3{
-  font-size: 20rem;
-  color: black;
-  line-height: 0.5rem;
-}
+  h3 {
+    font-size: 20rem;
+    color: black;
+    line-height: 0.5rem;
+  }
 
-  .interesting{
+  .interesting {
     display: flex;
     flex-direction: column;
     justify-content: center;
     opacity: 0;
     text-shadow: 0px 0px 100px red, 0px 0px 100px red;
 
-}
+  }
 }

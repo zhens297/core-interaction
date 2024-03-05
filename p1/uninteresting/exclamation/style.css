@@ -1,15 +1,16 @@
-*{
+* {
     cursor: url(../../image/period.png), auto;
-  }
+}
 
-body{
+body {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 1.5rem;
+    overflow: hidden;
 }
 
-h1{
+h1 {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -19,59 +20,63 @@ h1{
     text-align: center;
     margin-top: 13vw;
     margin-bottom: 13vw;
-    animation: bounce 1.8s infinite; 
+    animation: bounce 1.8s infinite;
 }
 
 @keyframes bounce {
     0% {
-        transform: translateY(0); 
+        transform: translateY(0);
     }
+
     10% {
-        transform: translateY(-32px); 
+        transform: translateY(-32px);
     }
 
     20% {
-        transform: translateY(5px); 
+        transform: translateY(5px);
     }
 
     28% {
-        transform: translateY(-7px); 
+        transform: translateY(-7px);
     }
 
     40% {
-        transform: translateY(0); 
+        transform: translateY(0);
     }
 
     100% {
-        transform: translateY(0); 
+        transform: translateY(0);
     }
 }
 
-h2{
+h2 {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     text-align: center;
 }
 
-.stats{
+.stats {
     line-height: 3px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h3{
+h3 {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    
+
 }
 
 .bar1 {
-    width: 250px; /* Adjust as needed */
-    height: 10px; /* Adjust as needed */
-    position: relative; /* Needed for absolute positioning */
+    width: 250px;
+    /* Adjust as needed */
+    height: 10px;
+    /* Adjust as needed */
+    position: relative;
+    /* Needed for absolute positioning */
 }
 
 .bar1 .fill {
@@ -79,8 +84,10 @@ h3{
     top: 0.26vh;
     left: 0;
     height: 100%;
-    background-color: red; /* Adjust as needed */
-    width: 102%; /* Adjust as needed */
+    background-color: red;
+    /* Adjust as needed */
+    width: 102%;
+    /* Adjust as needed */
 }
 
 .bar1 .border {
@@ -88,23 +95,27 @@ h3{
     top: 0;
     left: 0;
     height: 90%;
-    border: 3px solid red; /* Adjust border styles as needed */
-    width: 100%; /* Adjust as needed */
+    border: 3px solid red;
+    /* Adjust border styles as needed */
+    width: 100%;
+    /* Adjust as needed */
 }
-  
-.bar2{
+
+.bar2 {
     width: 250px;
     height: 10px;
     position: relative;
- }
+}
 
- .bar2 .fill {
+.bar2 .fill {
     position: absolute;
     top: 0.26vh;
     left: 0;
     height: 100%;
-    background-color: red; /* Adjust as needed */
-    width: 10%; /* Adjust as needed */
+    background-color: red;
+    /* Adjust as needed */
+    width: 10%;
+    /* Adjust as needed */
 }
 
 .bar2 .border {
@@ -112,23 +123,27 @@ h3{
     top: 0;
     left: 0;
     height: 90%;
-    border: 3px solid red; /* Adjust border styles as needed */
-    width: 100%; /* Adjust as needed */
+    border: 3px solid red;
+    /* Adjust border styles as needed */
+    width: 100%;
+    /* Adjust as needed */
 }
 
-.bar3{
+.bar3 {
     width: 250px;
     height: 10px;
     position: relative;
- }
+}
 
- .bar3 .fill {
+.bar3 .fill {
     position: absolute;
     top: 0.27vh;
     left: 0;
     height: 100%;
-    background-color: red; /* Adjust as needed */
-    width: 20%; /* Adjust as needed */
+    background-color: red;
+    /* Adjust as needed */
+    width: 20%;
+    /* Adjust as needed */
 }
 
 .bar3 .border {
@@ -136,23 +151,25 @@ h3{
     top: 0;
     left: 0;
     height: 90%;
-    border: 3px solid red; /* Adjust border styles as needed */
-    width: 100%; /* Adjust as needed */
+    border: 3px solid red;
+    /* Adjust border styles as needed */
+    width: 100%;
+    /* Adjust as needed */
 }
 
-p{
+p {
     border: 4px solid;
     border-radius: 4vw;
     padding: 30px;
     height: 79vh;
-    overflow: scroll;
+    overflow: auto;
 }
 
-.red{
+.red {
     color: red;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,13 +177,13 @@ p{
 
 }
 
-#grid{
+#grid {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    
+
 }
 
-button{
+button {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -177,34 +194,37 @@ button{
     cursor: pointer;
 }
 
-@media (max-width: 768px){
-  
-    h1{
+@media (max-width: 768px) {
+
+    body {
+        overflow: auto;
+    }
+
+    h1 {
         font-size: 20rem;
         color: black;
         line-height: 2px;
         text-align: center;
         margin-top: 28vw;
         margin-bottom: 28vw;
-        animation: flip 2s infinite alternate;
     }
 
-    .stats{
+    .stats {
         margin-bottom: 10vw;
     }
 
-    #grid{
+    #grid {
         display: grid;
         grid-template-columns: 1fr;
-        
+
     }
 
-    p{
+    p {
         border: 4px solid;
         border-radius: 4vw;
         padding: 30px;
         overflow: auto;
         height: auto;
     }
-  
-  }
+
+}
