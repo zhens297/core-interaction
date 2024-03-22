@@ -1,39 +1,39 @@
-body{
+body {
 	overflow: hidden;
 }
 
-svg{
-	width: 530px;
+svg {
+	width: 540px;
 	display: flex;
 	margin: auto;
 }
 
-#tulip:hover{
+#tulip:hover {
 	transform: translate(0, -50px);
 	cursor: pointer;
 }
 
-#tulip2:hover{
+#tulip2:hover {
 	transform: translate(0, -50px);
 	cursor: pointer;
 }
 
-#tulip3:hover{
+#tulip3:hover {
 	transform: translate(0, -50px);
 	cursor: pointer;
 }
 
 /* Media query for mobile screens */
-@media (max-width: 767px){
-    body{
-        overflow: hidden;
-    }
-    
-    svg{
-        width: 490px;
-        display: flex;
-        margin: auto;
-        padding-top: 5vh;
-    }
+@media (max-width: 767px) {
+	body {
+		overflow: hidden;
+	}
+
+	svg {
+		width: 490px;
+		display: flex;
+		margin: auto;
+		padding-top: 5vh;
+	}
 
 }
