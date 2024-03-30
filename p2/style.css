@@ -1,0 +1,27 @@
+body {
+    background-color: #FFFAEF;
+}
+
+p {
+    font-family: "Inria Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    margin: 1.5rem;
+}
+
+h1 {
+    font-family: inter;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    margin: 1.5rem;
+}
+
+h3 {
+    font-family: inter;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    padding-left: 1rem;
+}
