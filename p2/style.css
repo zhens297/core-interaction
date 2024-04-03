@@ -16,6 +16,8 @@ h1 {
     font-weight: 200;
     font-style: normal;
     margin: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 h3 {
@@ -24,4 +26,52 @@ h3 {
     font-weight: 200;
     font-style: normal;
     padding-left: 1rem;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+#toolbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.row-flexbox {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.object {
+    /* background-color: #f4f4f4; */
+    /* border-bottom: 1px #ccc dotted; */
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    /* box-shadow: #f4f4f4; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* .completed {
+    background: lightgreen;
+} */
+
+.object img {
+    max-width: 150px;
+    max-height: 150px;
+    margin-bottom: 1rem;
 }
