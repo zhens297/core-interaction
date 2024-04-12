@@ -102,6 +102,12 @@ button:hover {
     cursor: pointer;
 }
 
+.button-clicked {
+    color: #802f1d;
+    font-style: italic;
+}
+
+
 a {
     color: #802f1d;
     text-decoration: none;

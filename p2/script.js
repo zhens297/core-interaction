@@ -206,3 +206,32 @@ function mySecondFunction() {
 
     }
 }
+
+//button click events//
+
+document.addEventListener("DOMContentLoaded", function () {
+    var sortingButtons = document.querySelectorAll("#sorting button");
+    var navigationButtons = document.querySelectorAll(".navigation button");
+    var previousButton = null;
+
+    sortingButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            if (previousButton !== null) {
+                previousButton.classList.remove("button-clicked");
+            }
+            this.classList.add("button-clicked");
+            previousButton = this;
+        });
+    });
+
+    navigationButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            if (previousButton !== null) {
+                previousButton.classList.remove("button-clicked");
+            }
+            this.classList.add("button-clicked");
+            previousButton = this;
+        });
+    });
+});
+
