@@ -1,9 +1,7 @@
 const odes =
     [
         {
-            "name": "noguchi",
-            "img": 'noguchi.png',
-            "type": "home",
+            "name": "empty"
         },
         {
             "name": "heel",
@@ -14,6 +12,17 @@ const odes =
             "name": "earrings",
             "img": 'narutomaki.png',
             "type": "accessory",
+        },
+        {
+            "name": "noguchi",
+            "img": 'noguchi.png',
+            "type": "home",
+        },
+        {
+            "name": "empty"
+        },
+        {
+            "name": "empty"
         },
         {
             "name": "moon",
@@ -118,6 +127,7 @@ function organize(clicked) {
                 img.alt = ode.name;
                 odeElement.appendChild(img);
             }
+
 
             toolbox.appendChild(odeElement);
         }
