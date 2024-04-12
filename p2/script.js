@@ -1,166 +1,198 @@
-const objects =
+const odes =
     [
-        {
-            "name": "earrings",
-            "img": 'narutomaki.png',
-            "type": "accessory",
-            // "time": 1,
-            // "completed": true
-        },
-        {
-            "name": "asics",
-            "img": 'asics.png',
-            "type": "shoe",
-            // "time": 5,
-            // "completed": true
-        },
-        {
-            "name": "bowl",
-            "img": 'bowl.png',
-            "type": "ceramic",
-            // "time": 10,
-            // "completed": true
-        },
         {
             "name": "noguchi",
             "img": 'noguchi.png',
             "type": "home",
-            // "time": 20,
-            // "completed": false
+        },
+        {
+            "name": "heel",
+            "img": 'heel.png',
+            "type": "accessory",
+        },
+        {
+            "name": "earrings",
+            "img": 'narutomaki.png',
+            "type": "accessory",
         },
         {
             "name": "moon",
             "img": 'moon.png',
             "type": "home",
-            // "time": 15,
-            // "completed": false
         },
         {
-            "name": "teapot",
-            "img": 'teapot.png',
-            "type": "ceramic",
-            // "time": -20,
-            // "completed": false
-        },
-        {
-            "name": "heel",
-            "img": 'heel.png',
-            "type": "shoe",
-            // "time": -20,
-            // "completed": false
-        },
-        {
-            "name": "knot",
-            "img": 'knot.png',
+            "name": "tulip",
+            "img": 'tulip.png',
             "type": "accessory",
-            // "time": -20,
-            // "completed": false
+        },
+        {
+            "name": "empty"
+        },
+        {
+            "name": "empty"
         },
         {
             "name": "necklace",
             "img": 'necklace.png',
             "type": "accessory",
-            // "time": -20,
-            // "completed": false
+        },
+        {
+            "name": "stool",
+            "img": 'stool.png',
+            "type": "home",
+        },
+        {
+            "name": "bowl",
+            "img": 'bowl.png',
+            "type": "ceramic",
+        },
+        {
+            "name": "empty"
+        },
+        {
+            "name": "empty"
+        },
+        {
+            "name": "empty"
+        },
+        {
+            "name": "tuk",
+            "img": 'tuk.png',
+            "type": "accessory",
+        },
+        {
+            "name": "knot",
+            "img": 'knot.png',
+            "type": "accessory",
+        },
+        {
+            "name": "sony",
+            "img": 'sony.png',
+            "type": "music",
+        },
+        {
+            "name": "teapot",
+            "img": 'teapot.png',
+            "type": "ceramic",
+        },
+        {
+            "name": "empty"
+        },
+        {
+            "name": "empty"
+        },
+        {
+            "name": "lamp",
+            "img": 'lamp.jpg',
+            "type": "music",
         },
         {
             "name": "pampshade",
             "img": 'pampshade.png',
             "type": "home",
-            // "time": -20,
-            // "completed": false
         },
         {
-            "name": "teapot",
-            "img": 'lamp.jpg',
-            "type": "music",
-            // "time": -20,
-            // "completed": false
-        },
-        {
-            "name": "teapot",
-            "img": 'sony.png',
-            "type": "music",
-            // "time": -20,
-            // "completed": false
-        },
-        {
-            "name": "teapot",
-            "img": 'stool.png',
-            "type": "home",
-            // "time": -20,
-            // "completed": false
-        },
-        {
-            "name": "teapot",
-            "img": 'tuk.png',
-            "type": "shoe",
-            // "time": -20,
-            // "completed": false
-        },
-        {
-            "name": "teapot",
-            "img": 'tulip.png',
+            "name": "asics",
+            "img": 'asics.png',
             "type": "accessory",
-            // "time": -20,
-            // "completed": false
+        },
+        {
+            "name": "empty"
         }
+
     ]
 
-
-const toolbox = document.querySelector('#toolbox');
-const typeFilter = document.querySelector('#type-filter');
-// const timeFilter = document.querySelector('#time-filter');
-// const timeValue = document.querySelector('output[for="time-filter"]');
-let showCategory = 'all';
-// let minTime = 0;
-
-renderContent();
-updateControls();
-
-function renderContent() {
+function organize(clicked) {
     toolbox.innerHTML = '';
+    showCategory = clicked;
 
-    for (let i = 0; i < objects.length; i++) {
+    for (let i = 0; i < odes.length; i++) {
+        const ode = odes[i];
+        if (showCategory === 'all' || ode.type === showCategory) {
+            const odeElement = document.createElement('div');
+            odeElement.className = 'ode';
 
-        const object = objects[i];
+            if (ode.img) { // Check if image exists
+                const img = document.createElement('img');
+                img.src = 'img/' + ode.img;
+                img.alt = ode.name;
+                odeElement.appendChild(img);
+            }
 
-        // if (object.time >= minTime) {
-        if (showCategory === 'all' || object.type === showCategory) {
-
-            const objectElement = document.createElement('div');
-
-            objectElement.className = 'object';
-
-            // if (object.type === showCategory) {
-            //     objectElement.className += ' accessory';
-            // }
-
-            // objectElement.addEventListener('click', function () {
-            //     objectElement.classList.toggle('completed');
-            // });
-
-            const img = document.createElement('img');
-            img.src = 'img/' + object.img;
-            img.alt = object.name;
-
-            // objectElement.innerHTML = `<p>${object.name} - ${object.time} hours</p>`
-            objectElement.appendChild(img);
-            toolbox.appendChild(objectElement);
+            toolbox.appendChild(odeElement);
         }
     }
 }
 
-function updateControls() {
+let showCategory = 'all';
 
-    typeFilter.addEventListener('change', function () {
-        showCategory = typeFilter.value;
-        renderContent();
-    });
+renderAllContent();
 
-    timeFilter.addEventListener('input', function () {
-        timeValue.textContent = timeFilter.value;
-        minTime = timeFilter.value;
-        renderContent();
-    });
+function renderAllContent() {
+    toolbox.innerHTML = '';
+
+    for (let i = 0; i < odes.length; i++) {
+
+        const ode = odes[i];
+        if (showCategory === 'all' || ode.type === showCategory) {
+
+            const odeElement = document.createElement('div');
+            odeElement.className = 'ode';
+
+            if (ode.img) { // Check if image exists
+                const img = document.createElement('img');
+                img.src = 'img/' + ode.img;
+                img.alt = ode.name;
+                odeElement.appendChild(img);
+            }
+
+            toolbox.appendChild(odeElement);
+        }
+    }
+}
+
+
+//adding navigation//
+
+document.getElementById("yearn").addEventListener("click", myFunction);
+
+
+function myFunction() {
+
+
+    let landing = document.getElementById("landing");
+    let sorting = document.getElementById("sorting");
+    let landingHidden = landing.getAttribute("hidden");
+
+
+    if (landingHidden) {
+
+
+    }
+
+    else {
+        landing.setAttribute("hidden", "hidden");
+        sorting.removeAttribute("hidden");
+
+    }
+}
+
+document.getElementById("odeId").addEventListener("click", mySecondFunction);
+
+function mySecondFunction() {
+
+    let landing = document.getElementById("landing");
+    let sorting = document.getElementById("sorting");
+    let sortingHidden = sorting.getAttribute("hidden");
+
+    if (sortingHidden) {
+
+
+    }
+
+    else {
+        sorting.setAttribute("hidden", "hidden");
+        landing.removeAttribute("hidden");
+
+    }
 }

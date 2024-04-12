@@ -1,23 +1,28 @@
 body {
     background-color: #FFFAEF;
+    overflow: hidden;
 }
 
+/*title and body text stylings*/
 p {
     font-family: "Inria Serif", serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 20px;
-    margin: 1.5rem;
+    font-size: 16px;
+    margin: 2.5rem;
+    line-height: 23px;
 }
 
 h1 {
     font-family: inter;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 180;
+    font-size: 3.8rem;
     font-style: normal;
-    margin: 1.5rem;
-    text-align: center;
+    margin: 2.5rem;
+    margin-top: 1.2rem;
     margin-bottom: 2rem;
+    color: #473834;
 }
 
 h2 {
@@ -25,90 +30,233 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    margin: 1.1rem;
-    text-align: center;
+    margin: 2.5rem;
     margin-bottom: 2rem;
 }
 
-h3 {
-    font-family: inter;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    padding-left: 1rem;
-}
-
-#introduction {
-    height: 100vh;
+.description {
+    max-width: 95%;
 }
 
 #controls {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    margin: 2.5rem;
+    margin-top: 19rem;
 }
 
-#toolbox {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-
-}
-
-.row-flexbox {
-    display: flex;
-    gap: .5rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.object {
-    /* background-color: #f4f4f4; */
-    /* border-bottom: 1px #ccc dotted; */
-    padding: 1rem;
-    text-align: center;
-    width: 200px;
-    aspect-ratio: 1/1;
-    border-radius: 1rem;
-    /* box-shadow: #f4f4f4; */
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-/* .completed {
-    background: lightgreen;
-} */
-
-.object img {
-    max-width: 150px;
-    max-height: 150px;
-    margin-bottom: 1rem;
-}
-
+/*button stylings*/
 button {
     font-family: "Inria Serif", serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 1.8rem;
+    background-color: #FFFAEF;
+    color: #473834;
+    display: block;
+    border: none;
+    text-decoration: none;
+    margin-left: -0.3rem;
+}
+
+#odeId {
+    font-family: "Inria Serif", serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 20px;
-    margin: 1.5rem;
     background-color: #FFFAEF;
     border: none;
-    display: block;
-    margin: auto;
     text-decoration: none;
-    margin-bottom: 1rem;
+    display: inline-block;
+    margin: 2.1rem;
+    position: fixed;
+    bottom: 1rem;
+    z-index: 999;
+}
+
+#yearn {
+    font-family: "Inria Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #FFFAEF;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2.1rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 16rem;
+    z-index: 999;
+}
+
+#odeId:hover {
+    font-style: italic;
+}
+
+#yearn:hover {
+    font-style: italic;
 }
 
 button:hover {
     color: #802f1d;
     font-style: italic;
+    cursor: pointer;
 }
 
 a {
+    color: #802f1d;
     text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+/*image styling*/
+#toolbox {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.ode {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 calc(33.33%);
+
+}
+
+.ode img {
+    max-width: 9.4rem;
+    max-height: 9.4rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+img[alt="noguchi"] {
+    margin-top: 21.5rem;
+    max-width: 25rem;
+    max-height: 25rem;
+}
+
+img[alt="heel"] {
+    margin-top: -30rem;
+}
+
+img[alt="earrings"] {
+    margin-top: -30rem;
+    max-width: 6rem;
+    max-height: 6rem;
+}
+
+img[alt="moon"] {
+    margin-top: 5rem;
+    max-width: 13rem;
+    max-height: 14rem;
+}
+
+img[alt="tulip"] {
+    margin-top: 5rem;
+    max-width: 13rem;
+    max-height: 13rem;
+}
+
+img[alt="necklace"] {
+    margin-top: 9rem;
+    max-width: 13rem;
+    max-height: 13rem;
+}
+
+img[alt="stool"] {
+    margin-top: 9rem;
+}
+
+img[alt="bowl"] {
+    margin-top: 7rem;
+}
+
+img[alt="tuk"] {
+    margin-top: 25rem;
+}
+
+img[alt="knot"] {
+    margin-top: 7rem;
+    max-width: 25rem;
+    max-height: 25rem;
+}
+
+img[alt="sony"] {
+    margin-top: 8rem;
+}
+
+img[alt="teapot"] {
+    margin-top: 8rem;
+}
+
+img[alt="lamp"] {
+    margin-top: 23rem;
+}
+
+img[alt="pampshade"] {
+    margin-top: 23rem;
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+img[alt="asics"] {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+
+/*column situation*/
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        overflow: auto;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .navigation {
+        visibility: hidden;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #toolbox {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-height: none;
+        overflow-x: hidden;
+    }
+
+    .ode {
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 calc(33.33%);
+    }
+
+    .ode img {
+        max-width: 10rem;
+        max-height: 10rem;
+        margin: 3rem;
+        align-items: center;
+    }
+
 }

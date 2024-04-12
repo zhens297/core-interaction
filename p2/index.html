@@ -15,38 +15,37 @@
 </head>
 
 <body>
-    <h3>an ode</div>
-    </h3>
-    <div id="introduction">
-        <h1>an ode to yearned objects</h1>
-        <h2>on manifestation, gratitude and appreciation</h2>
+    <div class="navigation">
+        <button id="odeId">ode</button>
+        <button id="yearn">yearn</button>
     </div>
-    <p>a wishlist project inspired by noa goffer, a reclamation of ownership through creativity adoration and of the
-        object, a sincere recollection of things i cherish</p>
-    <div id="controls">
-        <div class="row-flexbox">
-            <label for="type-filter">yearning for:</label>
-            <select id="type-filter">
-                <option value="all">everything</option>
-                <option value="accessory">accessory</option>
-                <option value="ceramic">ceramics</option>
-                <option value="music">music</option>
-                <option value="home">home</option>
-                <option value="shoe">shoes</option>
-
-            </select>
+    <div id="grid">
+        <div id="landing">
+            <h1>an ode to yearned objects</h1>
+            <div class="description">
+                <p>on manifestation, gratitude and appreciation. a wishlist project inspired by <a
+                        href="https://noagoffer.com/the-wishlist">noa goffer</a>, a
+                    reclamation of ownership through creative adoration of the object in a sincere recollection of
+                    things
+                    i cherish.</p>
+            </div>
         </div>
-        <!-- <div class="row-flexbox">
-            <label for="time-filter">Time:</label>
-            <input type="range" id="time-filter" min="0" max="20" step="1" value="0">
-            <output for="time-filter">0</output> hours or more
-        </div> -->
-    </div>
-    <div id="toolbox"></div>
-    <a href="../index.html">
-        <button>return</button>
-    </a>
 
+
+
+        <div id="sorting" hidden>
+            <h1>yearning for</h1>
+            <div id="controls">
+                <button id="all" onclick="organize('all')">everything</button>
+                <button id="music" onclick="organize('music')">a melody</button>
+                <button id="ceramic" onclick="organize('ceramic')">a vessel</button>
+                <button id="accessory" onclick="organize('accessory')">a self decor</button>
+                <button id="home" onclick="organize('home')">a warm home</button>
+            </div>
+        </div>
+
+
+        <div id="toolbox"></div>
 </body>
 
 </html>
