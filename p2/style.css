@@ -244,10 +244,7 @@ img[alt="asics"] {
 
     h1 {
         font-size: 3.2rem;
-    }
-
-    .navigation {
-        visibility: hidden;
+        margin-top: -0.3rem;
     }
 
     #grid {
@@ -270,10 +267,22 @@ img[alt="asics"] {
     }
 
     .ode img {
-        max-width: 10rem;
-        max-height: 10rem;
+        max-width: 11rem;
+        max-height: 11rem;
         margin: 3rem;
         align-items: center;
+    }
+
+    #odeId {
+        position: static;
+        /* bottom: 43rem; */
+    }
+
+    #yearn {
+        position: static;
+        margin-left: 16rem;
+        /* bottom: 43rem; */
+
     }
 
 }
