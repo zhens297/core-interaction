@@ -107,9 +107,123 @@ const odes =
         },
         {
             "name": "empty"
-        }
-
+        },
     ]
+
+// const sketches =
+//     [
+//         {
+//             "name": "empty"
+//         },
+//         {
+//             "name": "heel",
+//             "img": 'sketchheel.png',
+//             "type": "accessory",
+//         },
+//         {
+//             "name": "earrings",
+//             "img": 'sketchnarutomaki.png',
+//             "type": "accessory",
+//         },
+//         {
+//             "name": "noguchi",
+//             "img": 'sketchnoguchi.png',
+//             "type": "home",
+//         },
+//         {
+//             "name": "empty"
+//         },
+//         {
+//             "name": "empty"
+//         },
+//         {
+//             "name": "moon",
+//             "img": 'sketchmoon.png',
+//             "type": "home",
+//         },
+//         {
+//             "name": "tulip",
+//             "img": 'sketchtulip.png',
+//             "type": "accessory",
+//         },
+//         {
+//             "name": "empty"
+//         },
+//         {
+//             "name": "empty"
+//         },
+//         {
+//             "name": "necklace",
+//             "img": 'sketchnecklace.png',
+//             "type": "accessory",
+//         },
+//         {
+//             "name": "stool",
+//             "img": 'sketchstool.png',
+//             "type": "home",
+//         },
+//         {
+//             "name": "bowl",
+//             "img": 'sketchbowl.png',
+//             "type": "ceramic",
+//         },
+//         {
+//             "name": "empty"
+//         },
+//         {
+//             "name": "empty"
+//         },
+//         {
+//             "name": "empty"
+//         },
+//         {
+//             "name": "tuk",
+//             "img": 'sketchtuk.png',
+//             "type": "accessory",
+//         },
+//         {
+//             "name": "knot",
+//             "img": 'sketchknot.png',
+//             "type": "accessory",
+//         },
+//         {
+//             "name": "sony",
+//             "img": 'sketchsony.png',
+//             "type": "music",
+//         },
+//         {
+//             "name": "teapot",
+//             "img": 'sketchteapot.png',
+//             "type": "ceramic",
+//         },
+//         {
+//             "name": "empty"
+//         },
+//         {
+//             "name": "empty"
+//         },
+//         {
+//             "name": "lamp",
+//             "img": 'sketchlamp.jpg',
+//             "type": "music",
+//         },
+//         {
+//             "name": "pampshade",
+//             "img": 'sketchpampshade.png',
+//             "type": "home",
+//         },
+//         {
+//             "name": "asics",
+//             "img": 'sketchasics.png',
+//             "type": "accessory",
+//         },
+//         {
+//             "name": "empty"
+//         },
+//     ]
+
+
+
 
 function organize(clicked) {
     toolbox.innerHTML = '';
@@ -159,7 +273,41 @@ function renderAllContent() {
             toolbox.appendChild(odeElement);
         }
     }
+    // const buttonDivElement = document.createElement('div');
+    // buttonDivElement.className = 'buttondiv';
+
+    // var x = document.createElement("button");
+    // x.className = 'manifest';
+    // x.innerHTML = 'manifest';
+    // buttonDivElement.appendChild(x);
+
+    // x.addEventListener('click', function () {
+
+    //     toolbox.innerHTML = '';
+
+    //     for (let i = 0; i < sketches.length; i++) {
+
+    //         const sketch = sketches[i];
+    //         if (showCategory === 'all' || sketch.type === showCategory) {
+
+    //             const sketchElement = document.createElement('div');
+    //             sketchElement.className = 'sketch';
+
+    //             if (sketch.img) { // Check if image exists
+    //                 const img = document.createElement('img');
+    //                 img.src = 'img/' + sketch.img;
+    //                 img.alt = sketch.name;
+    //                 sketchElement.appendChild(img);
+    //             }
+
+    //             toolbox.appendChild(sketchElement);
+    //         }
+    //     }
+    // });
+
+    // toolbox.appendChild(buttonDivElement);
 }
+
 
 
 //adding navigation//

@@ -88,6 +88,25 @@ button {
     z-index: 999;
 }
 
+.manifest {
+    font-size: 20px;
+
+}
+
+#buttondiv {
+    font-family: "Inria Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.manifest {
+    font-family: "Inria Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
 #odeId:hover {
     font-style: italic;
 }
@@ -152,6 +171,40 @@ a:hover {
     to {
         opacity: 1;
     }
+}
+
+.sketch {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 calc(33.33%);
+
+}
+
+.sketch img {
+    max-width: 9.4rem;
+    max-height: 9.4rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+img[alt="sketchheel"] {
+    margin-top: 4rem;
+}
+
+img[alt="sketchearrings"] {
+    margin-top: 4rem;
+    max-width: 6rem;
+    max-height: 6rem;
+}
+
+img[alt="sketchnoguchi"] {
+    margin-top: 10.3rem;
+    max-width: 25rem;
+    max-height: 25rem;
 }
 
 img[alt="heel"] {

@@ -1,0 +1,23 @@
+body {
+    background-color: #F9EDD7;
+}
+
+
+.bigfish {
+    width: 100px;
+}
+
+.circle {
+    height: 25px;
+    width: 25px;
+    stroke-width: 20px;
+    stroke: black;
+}
+
+button {
+    background-color: #F9EDD7;
+    border: none;
+    color: rgb(20, 14, 5);
+    cursor: pointer;
+    font-size: 20px;
+}
