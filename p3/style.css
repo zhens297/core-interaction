@@ -1,17 +1,68 @@
 body {
     background-color: #F9EDD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Ensure full viewport height */
+    margin: 0;
+    /* Remove default body margin */
 }
 
+#clock {
+    width: 650px;
+    height: 635px;
+    border: 2px solid #311717;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.hand {
+    position: absolute;
+    background: #000;
+}
+
+#hour {
+    width: 5px;
+    height: 325px;
+    background-color: blue;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    /* Center horizontally */
+    transform-origin: 50% 100%;
+}
+
+#minute {
+    width: 2px;
+    height: 325px;
+    background-color: red;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    /* Center horizontally */
+    transform-origin: 50% 100%;
+}
+
+#second {
+    width: 3px;
+    height: 325px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    /* Center horizontally */
+    transform-origin: 50% 100%;
+    background-color: greenyellow;
+}
+
+#second h1 {
+    color: red;
+    width: max-content;
+    transform: translate(-50%, -100%);
+}
 
 .bigfish {
-    width: 100px;
-}
-
-.circle {
-    height: 25px;
-    width: 25px;
-    stroke-width: 20px;
-    stroke: black;
+    width: 190px;
+    margin-top: -45px;
+    margin-left: -80px;
 }
 
 button {
