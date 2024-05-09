@@ -38,6 +38,7 @@ body {
     position: absolute;
     top: 47.8%;
     left: 47%;
+    cursor: pointer;
 }
 
 #hour {
@@ -78,7 +79,7 @@ body {
 
 .bigfish {
     width: 190px;
-    margin-top: -40px;
+    margin-top: -37px;
     margin-left: -60px;
 }
 
