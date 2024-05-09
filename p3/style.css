@@ -4,23 +4,40 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Ensure full viewport height */
     margin: 0;
-    /* Remove default body margin */
 }
 
 #clock {
     width: 650px;
     height: 635px;
-    border: 2px solid #311717;
+    border: 1.4px solid #311717;
     border-radius: 50%;
     position: relative;
-
 }
 
 .hand {
     position: absolute;
     background: #000;
+}
+
+.medium-circle {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 1.4px solid #311717;
+    position: absolute;
+    top: 20.5%;
+    left: 20.5%;
+}
+
+.small-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.4px solid #311717;
+    position: absolute;
+    top: 47.8%;
+    left: 47%;
 }
 
 #hour {
@@ -29,8 +46,9 @@ body {
     background-color: blue;
     left: 50%;
     transform: translateX(-50%) rotate(0deg);
-    /* Center horizontally */
     transform-origin: 50% 100%;
+    background: transparent;
+
 }
 
 #minute {
@@ -39,8 +57,8 @@ body {
     background-color: red;
     left: 50%;
     transform: translateX(-50%) rotate(0deg);
-    /* Center horizontally */
     transform-origin: 50% 100%;
+    background: transparent;
 }
 
 #second {
@@ -48,7 +66,6 @@ body {
     height: 325px;
     left: 50%;
     transform: translateX(-50%) rotate(0deg);
-    /* Center horizontally */
     transform-origin: 50% 100%;
     background-color: greenyellow;
 }
@@ -61,8 +78,14 @@ body {
 
 .bigfish {
     width: 190px;
-    margin-top: -45px;
-    margin-left: -80px;
+    margin-top: -40px;
+    margin-left: -60px;
+}
+
+.smallfish {
+    width: 165px;
+    margin-top: -40px;
+    margin-left: -110px;
 }
 
 button {
