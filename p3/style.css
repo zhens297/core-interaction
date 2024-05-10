@@ -133,3 +133,71 @@ button {
     cursor: pointer;
     font-size: 20px;
 }
+
+@media (max-width: 720px) {
+
+    #clock {
+        width: 400px;
+        height: 400px;
+    }
+
+    .medium-circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1.4px solid #311717;
+        position: absolute;
+        top: 24%;
+        left: 25%;
+    }
+
+    .small-circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 46%;
+        left: 46.5%;
+        cursor: pointer;
+    }
+
+    #hour {
+        height: 200px;
+    }
+
+    #minute {
+        width: 2px;
+        height: 200px;
+    }
+
+    .bigfish {
+        width: 100px;
+        margin-top: -25px;
+        margin-left: -27px;
+        cursor: pointer;
+    }
+
+    .bigfish:hover {
+        width: 100px;
+        margin-top: -25px;
+        margin-left: -27px;
+        cursor: pointer;
+        animation: wiggle 1s ease-in;
+    }
+
+    .smallfish {
+        width: 80px;
+        margin-top: -20px;
+        margin-left: -55px;
+        cursor: pointer;
+    }
+
+    .smallfish:hover {
+        width: 80px;
+        margin-top: -20px;
+        margin-left: -55px;
+        cursor: pointer;
+        animation: wiggle 1s ease-in;
+    }
+
+}
