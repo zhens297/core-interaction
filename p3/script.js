@@ -28,33 +28,15 @@ function toggleMusic() {
     }
 }
 
-function setClockToSix() {
-    const hourHand = document.getElementById("hour");
-    const minuteHand = document.getElementById("minute");
 
-    // Calculate the angles for 6:27 position
-    const hourAngle = 180 + (7 / 60) * 30; // 180 degrees + (27 minutes / 60 minutes) * 30 degrees
-    const minuteAngle = 162 + (7 / 60) * 6; // 162 degrees + (27 minutes / 60 minutes) * 6 degrees
 
-    hourHand.style.transition = "transform 2s";
-    minuteHand.style.transition = "transform 2s";
-
-    hourHand.style.transform = `rotate(${hourAngle}deg)`;
-    minuteHand.style.transform = `rotate(${minuteAngle}deg)`;
-
-    setTimeout(() => {
-        rotateHands();
-        hourHand.style.transition = "";
-        minuteHand.style.transition = "";
-    }, 2000);
-}
-
-// Get fish image elements
+// Get the big fish image element
 const bigFishImg = document.querySelector(".bigfish");
 const smallFishImg = document.querySelector(".smallfish");
 
-bigFishImg.addEventListener("click", setClockToSix);
+bigFishImg.addEventListener("click", toggleMusic);
 smallFishImg.addEventListener("click", toggleMusic);
+
 
 // Call rotateHands function every second
 setInterval(rotateHands, 1000);
